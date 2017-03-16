@@ -63,8 +63,3 @@ function drawPyramid(height) {
     }
 
 }
-
-
-document.getElementById('sliderVal').innerHTML = "10";
-
-drawPyramid(10);
