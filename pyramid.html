@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mike's Pyramid Slide!</title>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 20px;
+            margin: auto;
+        }
+
+        body {
+            font-family: "Helvetica", monospace;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Mike's Pyramid Slide</h1>
+        <label>Brick Symbol:</label>
+        <select>
+            <option>#</option>
+            <option>@</option>
+            <option>X</option>
+            <option>$</option>
+        </select>
+
+        <label>How high?</label>
+
+        <input type="range" id="height" min="1" max="20" oninput="DrawPyramid(this.value)" value="10">
+        <span id="sliderValue"></span>
+
+        <div id="pyramid"></div>
+
+        <script src="pyramid.js"></script>
+
+</body>
+
+</html>
