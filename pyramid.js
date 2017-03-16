@@ -5,7 +5,6 @@ function DrawPyramid(val){
 
 }
 
-
 function determineHeight() {
 
     var input = document.getElementById("height");
@@ -15,21 +14,11 @@ function determineHeight() {
 
 }
 
-
 var select = document.querySelector('select');
 
 select.addEventListener("change", determineHeightAndThenDrawPyramid);
 
-
-
-
-
-//drawPyramid
-
 function drawPyramid(height) {
-
-
-
     // before drawing, clear the old content
 
     document.getElementById('pyramid').innerHTML = "";
