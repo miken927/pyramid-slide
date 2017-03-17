@@ -10,15 +10,15 @@ function determineHeight() {
     var input = document.getElementById("height");
     heightStr = input.value;
     height = parseInt(heightStr);
-    drawPyramid(height);
+    redrawPyramid(height);
 
 }
 
 var select = document.querySelector('select');
 
-select.addEventListener("change", drawPyramid);
+select.addEventListener("change", DrawPyramid);
 
-function drawPyramid(height) {
+function redrawPyramid(height) {
 
     // before drawing, clear the old content
 
