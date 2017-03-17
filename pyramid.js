@@ -19,16 +19,15 @@ var select = document.querySelector('select');
 select.addEventListener("change", DrawPyramid);
 
 function drawPyramid(height) {
+
     // before drawing, clear the old content
 
     document.getElementById('pyramid').innerHTML = "";
 
     var select = document.querySelector('select');
-
     var brickType = select.value;
 
     // for each row....
-
     for (var row = 0; row < height; row++) {
 
         // figure out number of bricks and spaces
@@ -39,13 +38,16 @@ function drawPyramid(height) {
         // build up a string for this row
         var rowStr = "";
         for (var i = 0; i < numSpaces; i++) {
-         rowStr += ".";
+        rowStr += ".";
 
         }
 
         for (var i = 0; i < numBricks; i++) {
+
             rowStr += brickType;
+
         }
+
 
         // create a text element with the string of characters
 
@@ -54,7 +56,9 @@ function drawPyramid(height) {
         // create a <p> element with the text inside
 
         rowElem = document.createElement("p");
+
         rowElem.appendChild(textElem);
+
 
         // insert the paragraph as a child of the container <div>
 
