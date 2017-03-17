@@ -16,7 +16,7 @@ function determineHeight() {
 
 var select = document.querySelector('select');
 
-select.addEventListener("change", determineHeightAndThenDrawPyramid);
+select.addEventListener("change", DrawPyramid);
 
 function drawPyramid(height) {
     // before drawing, clear the old content
