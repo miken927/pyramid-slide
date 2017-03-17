@@ -16,13 +16,14 @@ function determineHeight() {
 
 var select = document.querySelector('select');
 
-select.addEventListener("change", DrawPyramid);
+select.addEventListener("change", drawPyramid);
 
 function drawPyramid(height) {
 
     // before drawing, clear the old content
 
     document.getElementById('pyramid').innerHTML = "";
+
 
     var select = document.querySelector('select');
     var brickType = select.value;
